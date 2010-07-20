@@ -1,15 +1,33 @@
 namespace bigtoe.specs
 {
+    using System;
+    using Magnum.TestFramework;
     using NUnit.Framework;
+
+    public class Given_A_Class_To_Process
+    {
+        public Type TypeToMetaModel = typeof (Person);
+    }
 
     [TestFixture]
     public class Model_specs
     {
-        [Test]
+        Metadata _model;
+
+        [When]
         public void BuildAModel()
         {
-            var model = MetaModel.Build<Person>();
-            MetaViewer.View(model);
+            _model = MetaModel.Build<Person>();
         }
+
+        [Then]
+        public void Some()
+        {
+            MetaViewer.View(_model);
+        }
+
+
     }
+
+
 }

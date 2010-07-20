@@ -1,0 +1,119 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="if" priority="4" />
+      <Item value="result" priority="1" />
+      <Item value="continue" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="relationship" priority="2" />
+      <Item value="bool" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="return" priority="3" />
+      <Item value="int" priority="2" />
+      <Item value="Name" priority="0" />
+      <Item value="With" priority="1" />
+      <Item value="public" priority="5" />
+      <Item value="static" priority="0" />
+      <Item value="EntityType`0" priority="7" />
+      <Item value="new" priority="3" />
+      <Item value="EntityType" priority="0" />
+      <Item value="Relationship`0" priority="1" />
+      <Item value="Metadata`0" priority="0" />
+      <Item value="Relationship" priority="0" />
+      <Item value="with" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="void" priority="1" />
+      <Item value="MailMessage" priority="0" />
+      <Item value="msg" priority="1" />
+      <Item value="true" priority="0" />
+      <Item value="SmtpClient`0" priority="0" />
+      <Item value="SmtpClient" priority="0" />
+      <Item value="client" priority="0" />
+      <Item value="FileAssert`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="Scenario" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:bigtoe.Relationship">
+      <Item value="Name" priority="1" />
+      <Item value="EntityType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:bigtoe.Metadata">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@bigtoe.EntityType">
+      <Item value="Property" priority="0" />
+      <Item value="Method" priority="1" />
+      <Item value="Parameter" priority="0" />
+      <Item value="Class" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Mail.MailMessage">
+      <Item value="BodyEncoding" priority="0" />
+      <Item value="IsBodyHtml" priority="0" />
+      <Item value="Body" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Mail.SmtpClient">
+      <Item value="Send`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="ReadAllText`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaViewer.cs" caret="105" fromTop="5" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="1070" fromTop="32" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Metadata.cs" caret="603" fromTop="21" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Relationship.cs" caret="358" fromTop="15" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:EntityType.cs" caret="462" fromTop="11" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Meta.cs" caret="104" fromTop="4" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:HTMLPage1.htm" caret="122" fromTop="5" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="206" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="483" fromTop="17" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Metadata.cs" caret="778" fromTop="25" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Metadata.cs" caret="163" fromTop="6" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Metadata.cs" caret="19" fromTop="0" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Meta.cs" caret="81" fromTop="3" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:EntityType.cs" caret="19" fromTop="0" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="810" fromTop="26" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:EntityType.cs" caret="697" fromTop="11" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="1373" fromTop="32" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="1786" fromTop="41" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:EntityType.cs" caret="462" fromTop="11" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="174" fromTop="6" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Relationship.cs" caret="682" fromTop="24" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Relationship.cs" caret="522" fromTop="20" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="1070" fromTop="32" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Metadata.cs" caret="1053" fromTop="33" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Relationship.cs" caret="94" fromTop="3" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="194" fromTop="7" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="518" fromTop="19" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="505" fromTop="27" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:HTMLPage1.htm" caret="122" fromTop="5" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="468" fromTop="25" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="388" fromTop="19" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="290" fromTop="15" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="81" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
