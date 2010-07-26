@@ -17,7 +17,7 @@ namespace bigtoe.specs
         [When]
         public void BuildAModel()
         {
-            _model = MetaModel.Build<Person>();
+            _model = MetaModel.Build(typeof(Person));
         }
 
         [Then]

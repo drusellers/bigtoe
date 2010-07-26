@@ -1,31 +1,35 @@
 namespace bigtoe
 {
+    using System;
     using System.Reflection;
 
     public class MetaModel
     {
-        public static Metadata Build<T>()
+        public static Metadata Build(Type t)
         {
-            var t = typeof(T);
             var result = new Metadata(t.Name, EntityType.Class);
 
-            ProcessProperties<T>(result);
+            ProcessProperties(t, result);
             
             
-            var constructors = typeof (T).GetConstructors();
+            var constructors = t.GetConstructors();
             foreach (var constructor in constructors)
             {
                 result.AddConstructor(constructor);
             }
 
 
-            ProcessMethods<T>(result);
+            ProcessMethods(t, result);
             return result;
         }
-
-        static void ProcessMethods<T>(Metadata result)
+        public static Metadata Build<T>()
         {
-            var methods = typeof(T).GetMethods();
+            return Build(typeof (T));
+        }
+
+        static void ProcessMethods(Type t, Metadata result)
+        {
+            var methods = t.GetMethods();
             foreach (var info in methods)
             {
                 if(result.HasProperty(info) || result.IsMethodOnObject(info)) continue;
@@ -39,9 +43,9 @@ namespace bigtoe
             }
         }
 
-        static void ProcessProperties<T>(Metadata result)
+        static void ProcessProperties(Type t, Metadata result)
         {
-            var properties = typeof(T).GetProperties();
+            var properties = t.GetProperties();
             foreach (var info in properties)
             {
                 result.AddProperty(info);
