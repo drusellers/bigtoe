@@ -1,17 +1,32 @@
 namespace bigtoe
 {
     using System;
+    using System.Linq;
     using System.Reflection;
 
     public class MetaModel
     {
-        public static Metadata Build(Type t)
+        public static Metadata BuildMessage(Type t)
+        {
+            var result = new Metadata(t.Name, EntityType.Message);
+
+            ProcessProperties(t, result);
+
+            ProcessMethods(t, result);
+            return result;
+        }
+        public static Metadata BuildMessage<T>()
+        {
+            return BuildMessage(typeof (T));
+        }
+
+        public static Metadata BuildClass(Type t)
         {
             var result = new Metadata(t.Name, EntityType.Class);
 
             ProcessProperties(t, result);
-            
-            
+
+
             var constructors = t.GetConstructors();
             foreach (var constructor in constructors)
             {
@@ -22,9 +37,9 @@ namespace bigtoe
             ProcessMethods(t, result);
             return result;
         }
-        public static Metadata Build<T>()
+        public static Metadata BuildClass<T>()
         {
-            return Build(typeof (T));
+            return BuildClass(typeof(T));
         }
 
         static void ProcessMethods(Type t, Metadata result)
@@ -48,18 +63,75 @@ namespace bigtoe
             var properties = t.GetProperties();
             foreach (var info in properties)
             {
-                result.AddProperty(info);
+                if (info.PropertyType.IsUserType())
+                {
+                    var r = BuildMessage(info.PropertyType);
+                    result.Relationships.Add(Relationship.BuildHasA(EntityType.Property, r));
+                }
+                else
+                {
+                    result.AddProperty(info);
+                }
+
             }
         }
     }
 
     public static class Ext
     {
+        public static bool IsUserType(this Type t)
+        {
+            if (t == null) return false;
+
+            try
+            {
+                if (t.IsPrimitive || t.Is<int>() || t.Is<string>() || t.Is<decimal>() || t.Is<Guid>() ||
+                    t.Is<DateTime>() || t.IsGenericType)
+                {
+                    return false;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        public static bool IsNullable(this Type t)
+        {
+            if(t.IsGenericType)
+            {
+                var def = t.GetGenericTypeDefinition();
+                return def.Equals(typeof (Nullable<>));
+            }
+
+            return false;
+        }
+
+        public static bool IsNullable(this Metadata d)
+        {
+            return d.Relationships.Any(r => r.EntityType == EntityType.Note && r.Name == "Nullable");
+        }
 
         public static Metadata AddProperty(this Metadata m, PropertyInfo info)
         {
-            var x = new Metadata(info.Name, new EntityType(info.PropertyType.Name));
-            m.Relationships.Add(Relationship.BuildHasA(EntityType.Property, x));
+            var t = info.PropertyType;
+            
+            //TODO: Handle lists
+            Metadata x;
+            if (t.IsNullable())
+            {
+                x = new Metadata(info.Name, new EntityType(info.PropertyType.GetGenericArguments()[0].Name));
+                x.Relationships.Add(new Relationship("Nullable", EntityType.Note));
+                m.Relationships.Add(Relationship.BuildHasA(EntityType.Property, x));
+            }
+            else
+            {
+                x = new Metadata(info.Name, new EntityType(info.PropertyType.Name));
+                m.Relationships.Add(Relationship.BuildHasA(EntityType.Property, x));
+            }
 
             return x;
         }
@@ -84,6 +156,10 @@ namespace bigtoe
             m.Relationships.Add(Relationship.BuildHasA(EntityType.Constructor, x));
 
             return x;
+        }
+        public static bool Is<T>(this Type t)
+        {
+            return t.IsAssignableFrom(typeof (T));
         }
     }
 }

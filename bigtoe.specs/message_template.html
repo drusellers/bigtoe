@@ -1,0 +1,10 @@
+<html>
+<head></head>
+<body>
+	<h1><img src="${Model.EntityType.Name.ToLower()}.png" /> Message ${Model.Name}</h1>
+	
+	    <div each="var r in Model.Relationships">
+	        <img src="${r.EntityType.Name.ToLower()}.png" /> ${r.Name} ${r.EntityType.Name} ${r.With.Name} is a ${r.With.EntityType.Name}
+	    </div>
+</body>
+</html>

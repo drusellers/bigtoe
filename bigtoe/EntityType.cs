@@ -11,7 +11,9 @@ namespace bigtoe
         public static EntityType Method = new EntityType("Method");
         public static EntityType Parameter = new EntityType("Parameter");
         public static EntityType Class = new EntityType("Class");
+        public static EntityType Message = new EntityType("Message");
         public static EntityType Constructor = new EntityType("Constructor");
+        public static EntityType Note = new EntityType("Note");
 
         public EntityType(string name)
         {
