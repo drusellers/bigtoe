@@ -22,3 +22,5 @@ TestResult.xml
 submit.xml
 SolutionVersion.cs
 SolutionVersion.vb
+FHLBank.*
+MassTransit.*

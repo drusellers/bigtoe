@@ -46,5 +46,13 @@ namespace bigtoe
         {
             return new[] {"GetType", "ToString", "GetHashCode", "Equals"}.Contains(info.Name);
         }
+
+        public bool IsNullable()
+        {
+            if (Relationships.Any(r => r.EntityType == EntityType.Note && r.Name == "Nullable")) return true;
+
+            var nullableTypes = new HashSet<string>() {"String"};
+            return nullableTypes.Contains(EntityType.Name);
+        }
     }
 }

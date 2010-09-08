@@ -1,7 +1,6 @@
 namespace bigtoe
 {
     using System;
-    using System.Linq;
     using System.Reflection;
 
     public class MetaModel
@@ -9,7 +8,7 @@ namespace bigtoe
         public static Metadata BuildMessage(Type t)
         {
             var result = new Metadata(t.Name, EntityType.Message);
-
+            result.Relationships.Add(Relationship.BuildAssembly(t));
             ProcessProperties(t, result);
 
             ProcessMethods(t, result);
@@ -23,6 +22,7 @@ namespace bigtoe
         public static Metadata BuildClass(Type t)
         {
             var result = new Metadata(t.Name, EntityType.Class);
+            result.Relationships.Add(Relationship.BuildAssembly(t));
 
             ProcessProperties(t, result);
 
@@ -110,10 +110,7 @@ namespace bigtoe
             return false;
         }
 
-        public static bool IsNullable(this Metadata d)
-        {
-            return d.Relationships.Any(r => r.EntityType == EntityType.Note && r.Name == "Nullable");
-        }
+
 
         public static Metadata AddProperty(this Metadata m, PropertyInfo info)
         {

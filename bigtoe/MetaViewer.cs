@@ -39,7 +39,7 @@ namespace bigtoe
             File.WriteAllText("{0}.model.txt".FormatWith(data.Name),sb.ToString());
         }
 
-        public static void BuildIndex(string template, List<Metadata> model)
+        public static void BuildIndex(string template, List<Metadata> model, Dictionary<string, List<Metadata>> byAssembly)
         {
             var viewFolder = new FileSystemViewFolder(".");
             var engine = new SparkViewEngine()
@@ -48,7 +48,7 @@ namespace bigtoe
                 ViewFolder = viewFolder
             };
 
-            string templateResult = ProcessViewTemplate(engine, template, model);
+            string templateResult = ProcessViewTemplate(engine, template, model, byAssembly);
 
             if (!Directory.Exists("output")) Directory.CreateDirectory("output");
             File.WriteAllText(".\\output\\index.html", templateResult);
@@ -84,13 +84,18 @@ namespace bigtoe
             return sb.ToString();
         }
 
-        static string ProcessViewTemplate(SparkViewEngine engine, string templateName, List<Metadata> model)
+        static string ProcessViewTemplate(SparkViewEngine engine, string templateName, List<Metadata> model, Dictionary<string, List<Metadata>> byAssembly)
         {
             var view = (IndexView)engine.CreateInstance(
                 new SparkViewDescriptor()
                     .AddTemplate(templateName));
 
-            view.Model = model;
+            view.Model = new ComplexView()
+                             {
+                                 ByAssembly = byAssembly,
+                                 ByMessage = model
+                             };
+
 
             var sb = new StringBuilder();
             using (var writer = new StringWriter(sb))
@@ -106,11 +111,18 @@ namespace bigtoe
     public abstract class IndexView :
         AbstractSparkView
     {
-        public List<Metadata> Model { get; set; }
+        public ComplexView Model { get; set; }
     }
     public abstract class MessageView : 
         AbstractSparkView
     {
         public Metadata Model { get; set; }
     }
+    public class ComplexView
+    {
+        public List<Metadata> ByMessage { get; set; }
+        public Dictionary<string, List<Metadata>> ByAssembly { get; set; }
+
+    }
+
 }

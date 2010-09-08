@@ -2,9 +2,25 @@
 <head></head>
 <body>
 	<h1>BIG TOE - Go Boom!</h1>
-	
-	    <div each="var msg in Model">
-	        <img src="${msg.EntityType.Name.ToLower()}.png" /> <a href="${msg.Name}.model.html">${msg.Name}</a>
-	    </div>
+	<table>
+	    <tr>
+	        <td valign="top" width="50%">
+	            <h2>All Messages</h2>
+	            <div each="var msg in Model.ByMessage">
+	                <img src="${msg.EntityType.Name.ToLower()}.png" /> <a href="${msg.Name}.model.html">${msg.Name}</a>
+	            </div>
+	        </td>
+	        <td valign="top" width="50%">
+	            <h2>Messages by Assembly</h2>
+	            <div each="var kp in Model.ByAssembly">
+	                <h3>${kp.Key}</h3>
+	                <div each="var msg in kp.Value">
+	                    <img src="${msg.EntityType.Name.ToLower()}.png" /> <a href="${msg.Name}.model.html">${msg.Name}</a>
+	                </div>
+	            </div>
+	        </td>
+	    </tr>
+	</table>
+	    
 </body>
 </html>

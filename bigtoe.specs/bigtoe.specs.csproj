@@ -69,6 +69,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assembly.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="index_template.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
