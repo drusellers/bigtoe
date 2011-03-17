@@ -27,6 +27,7 @@ namespace bigtoe
         public static EntityType Constructor = new EntityType("Constructor");
         public static EntityType Note = new EntityType("Note");
         public static EntityType Assembly = new EntityType("Assembly");
+        public static EntityType Obsolete = new EntityType("Obsolete");
 
         public EntityType(string name)
         {

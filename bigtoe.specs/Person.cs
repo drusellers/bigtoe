@@ -1,5 +1,7 @@
 namespace bigtoe.specs
 {
+    using System;
+
     public class Person
     {
         public string Name { get; set; }
@@ -13,8 +15,10 @@ namespace bigtoe.specs
         public void Bob(){}
     }
 
+    [Obsolete("Message")]
     public class Address
     {
+        [Obsolete("Message2")]
         public string StreetNumber { get; set; }
     }
 }

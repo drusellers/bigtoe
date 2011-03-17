@@ -10,6 +10,11 @@ namespace bigtoe
 
     public class MetaViewer
     {
+        public static void CopyImages()
+        {
+            var files = Directory.GetFiles(@".\template", "*.png");
+            files.Each(f => File.Copy(f, Path.Combine(@".\output", Path.GetFileName(f)), true));
+        }
         public static void View(Metadata data)
         {
             Console.WriteLine("a '{0}' named '{1}' ", data.EntityType.Name, data.Name);

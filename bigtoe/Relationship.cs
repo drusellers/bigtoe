@@ -48,5 +48,13 @@ namespace bigtoe
                            With = new Metadata(type.Assembly.GetName().Name, new EntityType("dotnet assembly"))
                        };
         }
+
+        public static Relationship Obsolete(Type type)
+        {
+            return new Relationship("has a", EntityType.Note)
+                       {
+                           With  = new Metadata("item is", EntityType.Obsolete)
+                       };
+        }
     }
 }

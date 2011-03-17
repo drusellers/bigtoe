@@ -2,6 +2,7 @@ namespace bigtoe
 {
     using System;
     using System.Reflection;
+    using Magnum.Extensions;
 
     public class MetaModel
     {
@@ -9,6 +10,11 @@ namespace bigtoe
         {
             var result = new Metadata(t.Name, EntityType.Message);
             result.Relationships.Add(Relationship.BuildAssembly(t));
+//            if(t.HasAttribute<ObsoleteAttribute>())
+//            {
+//                result.Relationships.Add(Relationship.Obsolete(t));
+//            }
+
             ProcessProperties(t, result);
 
             ProcessMethods(t, result);
@@ -23,6 +29,11 @@ namespace bigtoe
         {
             var result = new Metadata(t.Name, EntityType.Class);
             result.Relationships.Add(Relationship.BuildAssembly(t));
+
+//            if (t.HasAttribute<ObsoleteAttribute>())
+//            {
+//                result.Relationships.Add(Relationship.Obsolete(t));
+//            }
 
             ProcessProperties(t, result);
 
@@ -72,7 +83,6 @@ namespace bigtoe
                 {
                     result.AddProperty(info);
                 }
-
             }
         }
     }
@@ -122,11 +132,21 @@ namespace bigtoe
             {
                 x = new Metadata(info.Name, new EntityType(info.PropertyType.GetGenericArguments()[0].Name));
                 x.Relationships.Add(new Relationship("Nullable", EntityType.Note));
+
+//                if(info.HasAttribute<ObsoleteAttribute>())
+//                {
+//                    x.Relationships.Add(Relationship.Obsolete(t));
+//                }
+
                 m.Relationships.Add(Relationship.BuildHasA(EntityType.Property, x));
             }
             else
             {
-                x = new Metadata(info.Name, new EntityType(info.PropertyType.Name));
+                x = new Metadata(info.Name, new EntityType(t.Name));
+//                if (info.HasAttribute<ObsoleteAttribute>())
+//                {
+//                    x.Relationships.Add(Relationship.Obsolete(t));
+//                }
                 m.Relationships.Add(Relationship.BuildHasA(EntityType.Property, x));
             }
 

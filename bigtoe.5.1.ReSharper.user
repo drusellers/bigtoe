@@ -1,0 +1,225 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:conf/f:assemblies.txt" caret="369" fromTop="8" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:template/f:color.css" caret="15" fromTop="0" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:template/f:structure.css" caret="46" fromTop="1" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Person.cs" caret="65" fromTop="3" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:EntityType.cs" caret="1479" fromTop="27" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Relationship.cs" caret="1448" fromTop="24" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/d:MessageModel/f:MessagePart.cs" caret="31" fromTop="0" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/d:MessageModel/f:Message.cs" caret="84" fromTop="5" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Model_specs.cs" caret="604" fromTop="26" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaViewer.cs" caret="231" fromTop="3" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="4425" fromTop="14" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Class1.cs" caret="180" fromTop="9" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/d:Configuration/f:Config.cs" caret="109" fromTop="4" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="306" fromTop="3" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="2246" fromTop="20" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="3083" fromTop="35" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaViewer.cs" caret="454" fromTop="9" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:template/f:structure.css" caret="52" fromTop="22" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:template/f:structure.css" caret="564" fromTop="28" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:template/f:structure.css" caret="46" fromTop="1" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/d:template/f:color.css" caret="15" fromTop="0" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Person.cs" caret="422" fromTop="19" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="2566" fromTop="19" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="1106" fromTop="14" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:EntityType.cs" caret="1476" fromTop="19" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:Relationship.cs" caret="1926" fromTop="17" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaViewer.cs" caret="0" fromTop="0" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/d:MessageModel/f:Message.cs" caret="85" fromTop="6" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/d:MessageModel/f:MessagePart.cs" caret="0" fromTop="0" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="959" fromTop="32" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="352" fromTop="12" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="4361" fromTop="13" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/f:MetaModel.cs" caret="3981" fromTop="3" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="3992" fromTop="30" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="621" fromTop="18" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="623" fromTop="23" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="552" fromTop="18" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="941" fromTop="31" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="655" fromTop="12" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Class1.cs" caret="368" fromTop="14" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Class1.cs" caret="291" fromTop="12" />
+      <File id="081784C0-0B7C-4A0E-B1EC-B9ED8F134AF1/f:Class1.cs" caret="379" fromTop="16" />
+      <File id="17452657-C69A-42E0-9E2F-7857BB6A870E/d:Configuration/f:Config.cs" caret="180" fromTop="5" />
+      <File id="DC3C982D-AE1B-498A-B3E0-D57A7E2158A9/f:Program.cs" caret="306" fromTop="3" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Magnum" priority="1" />
+      <Item value="Configuration" priority="1" />
+      <Item value="ConfigurationBinderFactory`0" priority="1" />
+      <Item value="a" priority="1" />
+      <Item value="public" priority="8" />
+      <Item value="class" priority="1" />
+      <Item value="interface" priority="0" />
+      <Item value="string" priority="6" />
+      <Item value="var" priority="8" />
+      <Item value="cc" priority="1" />
+      <Item value="new" priority="7" />
+      <Item value="Cfg`0" priority="0" />
+      <Item value="o" priority="1" />
+      <Item value="JavaScriptSerializer" priority="0" />
+      <Item value="js" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="if" priority="4" />
+      <Item value="assembly" priority="1" />
+      <Item value="return" priority="1" />
+      <Item value="continue" priority="0" />
+      <Item value="static" priority="1" />
+      <Item value="void" priority="1" />
+      <Item value="File`0" priority="1" />
+      <Item value="Directory`0" priority="0" />
+      <Item value="files" priority="0" />
+      <Item value="Each`1" priority="1" />
+      <Item value="f" priority="0" />
+      <Item value="MetaViewer`0" priority="0" />
+      <Item value="Path`0" priority="0" />
+      <Item value="Console`0" priority="9" />
+      <Item value="try" priority="1" />
+      <Item value="ReflectionTypeLoadException`0" priority="1" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="ex" priority="3" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="messages" priority="0" />
+      <Item value="Obsolete" priority="0" />
+      <Item value="info" priority="2" />
+      <Item value="ObsoleteAttribute`0" priority="2" />
+      <Item value="Relationship" priority="1" />
+      <Item value="EntityType`0" priority="3" />
+      <Item value="t" priority="0" />
+      <Item value="result" priority="0" />
+      <Item value="Relationship`0" priority="0" />
+      <Item value="With" priority="0" />
+      <Item value="Metadata" priority="0" />
+      <Item value="EntityType" priority="0" />
+      <Item value="binder" priority="0" />
+      <Item value="cfg" priority="0" />
+      <Item value="from" priority="0" />
+      <Item value="where" priority="0" />
+      <Item value="c" priority="2" />
+      <Item value="orderby" priority="0" />
+      <Item value="select" priority="0" />
+      <Item value="Select`2" priority="0" />
+      <Item value="char" priority="0" />
+      <Item value="int" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Magnum.Configuration.ConfigurationBinderFactory">
+      <Item value="New`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Magnum.Configuration.ConfigurationBinderConfigurator">
+      <Item value="AddJsonFile`0" priority="0" />
+      <Item value="AddCommandLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Magnum.Configuration.ConfigurationBinder">
+      <Item value="Bind`0" priority="1" />
+      <Item value="GetAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:toe.Cfg">
+      <Item value="assemblies" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Script.Serialization.JavaScriptSerializer">
+      <Item value="Serialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="ReadAllLines`0" priority="0" />
+      <Item value="Copy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="FullName" priority="0" />
+      <Item value="GetName`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="StartsWith`0" priority="0" />
+      <Item value="FormatWith`0" priority="0" />
+      <Item value="Cast`1" priority="0" />
+      <Item value="ToCharArray`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="GetFiles`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@bigtoe.MetaViewer">
+      <Item value="CopyImages`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFileName`0" priority="0" />
+      <Item value="Combine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="ReadKey`0" priority="0" />
+      <Item value="WriteLine`0" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.ReflectionTypeLoadException">
+      <Item value="LoaderExceptions" priority="2" />
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Random">
+      <Item value="Next`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
+      <Item value="HasAttribute`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:bigtoe.Metadata">
+      <Item value="Relationships" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="HasAttribute`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:bigtoe.EntityType">
+      <Item value="Note" priority="0" />
+      <Item value="Obsolete" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@bigtoe.Relationship">
+      <Item value="Obsolete`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@bigtoe.EntityType">
+      <Item value="Note" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:bigtoe.Configuration.Config">
+      <Item value="File" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="Equals`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Count`1" priority="1" />
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
