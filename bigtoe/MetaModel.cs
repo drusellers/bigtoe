@@ -96,7 +96,7 @@ namespace bigtoe
             try
             {
                 if (t.IsPrimitive || t.Is<int>() || t.Is<string>() || t.Is<decimal>() || t.Is<Guid>() ||
-                    t.Is<DateTime>() || t.IsGenericType)
+                    t.Is<DateTime>() || t.IsGenericType || t.Is<Type>())
                 {
                     return false;
                 }
@@ -104,7 +104,6 @@ namespace bigtoe
             }
             catch (Exception ex)
             {
-
                 throw;
             }
         }
