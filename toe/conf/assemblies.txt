@@ -1,10 +1,2 @@
 ﻿MassTransit.ServiceBus.dll
-FHLBank.Shared.Messages.Derivatives.dll
-FHLBank.Shared.Messages.Debt.dll
-FHLBank.Shared.Messages.Entities.dll
-FHLBank.Shared.Messages.Advances.dll
-FHLBank.Shared.Messages.Deposits.dll
-FHLBank.Shared.Messages.dll
-FHLBank.Shared.Messages.GeneralLedger.dll
-FHLBank.Shared.Messages.Investments.dll
-FHLBank.Shared.Messages.Safekeeping.dll
+--dll's to analyze here
